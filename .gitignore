@@ -24,3 +24,6 @@ npm-debug.log*
 .DS_Store
 .idea/
 .vscode/
+
+# This repo holds only the CRM client — the server is deployed separately
+server/
