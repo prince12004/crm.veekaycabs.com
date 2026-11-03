@@ -48,6 +48,9 @@ cd crm/client && npm run dev   # http://localhost:4100
   runs every minute) reassigns any lead whose owner hasn't logged a call or
   WhatsApp within 15 minutes of assignment to the next salesperson in
   rotation, and keeps a lifetime `slaBreachCount` per lead for reporting
+- **Interested lead review** — when a salesperson marks a lead "Interested",
+  it is assigned to Super Admin, removed from SLA reassignment, and an alert
+  is sent to the configured admin WhatsApp number(s)
 - **"Not Interested" auto-transfer** — a salesperson marking a lead "Not
   Interested" hands it to Super Admin for review automatically; the full
   history (who marked it, the reason, who had it before) stays on the
